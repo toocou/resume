@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toby Coulthard — Product &amp; Growth Leader</title>
+  <meta name="description" content="Toby Coulthard — builder-minded product and growth leader. 10+ years driving go-to-market strategy at high-growth technology companies, from startup through IPO." />
+  <meta property="og:title" content="Toby Coulthard — Product & Growth Leader" />
+  <meta property="og:description" content="Builder-minded product & growth leader. Startup → IPO. AI-native. New York City." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230B0B0C'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='%23FF4D00' font-family='sans-serif' font-weight='800'>T</text></svg>" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== Preloader ===== -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <div class="preloader__name">
+        <span class="preloader__word">TOBY</span>
+        <span class="preloader__word preloader__word--accent">COULTHARD</span>
+      </div>
+      <div class="preloader__count" id="preloaderCount">0</div>
+    </div>
+    <div class="preloader__bar"><span id="preloaderBar"></span></div>
+  </div>
+
+  <!-- ===== Custom cursor ===== -->
+  <div class="cursor" id="cursor" aria-hidden="true"><span class="cursor__label" id="cursorLabel"></span></div>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header" id="siteHeader">
+    <a class="site-header__logo" href="#top" data-cursor="hover">
+      TC<sup>©</sup>
+    </a>
+    <nav class="site-header__nav" aria-label="Primary">
+      <a href="#about" data-cursor="hover">About</a>
+      <a href="#experience" data-cursor="hover">Experience</a>
+      <a href="#capabilities" data-cursor="hover">Capabilities</a>
+      <a href="#contact" data-cursor="hover">Contact</a>
+    </nav>
+    <div class="site-header__right">
+      <span class="site-header__status"><i></i>Open to opportunities</span>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="menuOverlay" data-cursor="hover">
+        <span class="menu-toggle__label">Menu</span>
+        <span class="menu-toggle__lines"><i></i><i></i></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== Fullscreen menu ===== -->
+  <div class="menu" id="menuOverlay" aria-hidden="true">
+    <nav class="menu__nav" aria-label="Menu">
+      <a href="#about" class="menu__link" data-cursor="hover"><span class="menu__index">01</span><span class="menu__word">About</span></a>
+      <a href="#experience" class="menu__link" data-cursor="hover"><span class="menu__index">02</span><span class="menu__word">Experience</span></a>
+      <a href="#capabilities" class="menu__link" data-cursor="hover"><span class="menu__index">03</span><span class="menu__word">Capabilities</span></a>
+      <a href="#contact" class="menu__link" data-cursor="hover"><span class="menu__index">04</span><span class="menu__word">Contact</span></a>
+    </nav>
+    <div class="menu__footer">
+      <a href="mailto:tjmcou@gmail.com" data-cursor="hover">tjmcou@gmail.com</a>
+      <a href="https://linkedin.com/in/toocou" target="_blank" rel="noopener" data-cursor="hover">LinkedIn ↗</a>
+      <span>New York, NY</span>
+    </div>
+  </div>
+
+  <main id="top">
+
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="hero">
+      <canvas class="hero__canvas" id="heroCanvas" aria-hidden="true"></canvas>
+      <div class="hero__content">
+        <p class="hero__kicker" data-hero-fade>
+          <span class="hero__kicker-line"></span>Product &amp; Growth Leader — AI Native
+        </p>
+        <h1 class="hero__title" aria-label="Toby Coulthard" data-fit>
+          <span class="hero__line hero__line--right"><span class="hero__line-inner" data-split>TOBY</span></span>
+          <span class="hero__line"><span class="hero__line-inner hero__line-inner--accent" data-split>COULTHARD</span></span>
+        </h1>
+        <div class="hero__meta">
+          <p data-hero-fade>Building 0→1 programs and scaling GTM<br />from startup through IPO. Ten years deep<br />in the AI/ML &amp; MarTech landscape.</p>
+          <p class="hero__location" data-hero-fade>Based in New York City<br /><span id="nycTime">—</span> EST</p>
+        </div>
+      </div>
+      <div class="hero__scroll" data-hero-fade aria-hidden="true">
+        <span>Scroll</span>
+        <div class="hero__scroll-line"><i></i></div>
+      </div>
+    </section>
+
+    <!-- ===== Marquee ===== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track" id="marqueeTrack">
+        <span>Go-to-Market Strategy</span><em>✦</em>
+        <span>Generative AI</span><em>✦</em>
+        <span>0 → 1 Programs</span><em>✦</em>
+        <span>Partnerships</span><em>✦</em>
+        <span>Startup → IPO</span><em>✦</em>
+        <span>Product Leadership</span><em>✦</em>
+      </div>
+    </div>
+
+    <!-- ===== About ===== -->
+    <section class="about section" id="about">
+      <div class="section__head">
+        <span class="section__index">01</span>
+        <span class="section__label">About</span>
+      </div>
+      <div class="about__grid">
+        <div class="about__portrait" data-parallax>
+          <div class="about__portrait-frame">
+            <!-- Replace this placeholder block with: <img src="assets/portrait.jpg" alt="Portrait of Toby Coulthard" /> -->
+            <div class="about__portrait-placeholder" role="img" aria-label="Portrait placeholder">
+              <span class="about__monogram">TC</span>
+              <span class="about__portrait-note">Portrait<br/>forthcoming</span>
+            </div>
+          </div>
+          <p class="about__caption">Toby Coulthard — New York, NY</p>
+        </div>
+        <div class="about__text">
+          <p class="about__lead" data-reveal-lines>
+            Builder-minded product and growth leader with <strong>10+ years</strong> driving go-to-market strategy at high-growth technology companies — from <strong>startup through IPO</strong>.
+          </p>
+          <p class="about__body" data-reveal>
+            Currently leading Product &amp; Growth at Jacquard, an AI-native company — with deep expertise in the AI/ML landscape and generative AI applications. A technical foundation in Electronic Engineering, hands-on with data infrastructure, Unix systems and embedded systems, combined with the communication skills to engage founders, developers and enterprise stakeholders alike.
+          </p>
+          <a class="about__cta" href="#experience" data-cursor="hover" data-reveal>
+            <span>See the track record</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="stats">
+        <div class="stats__item" data-reveal>
+          <span class="stats__num"><span data-count="10">0</span>+</span>
+          <span class="stats__label">Years in high-growth tech</span>
+        </div>
+        <div class="stats__item" data-reveal>
+          <span class="stats__num"><span data-count="6">0</span></span>
+          <span class="stats__label">Promotions, startup → IPO at Braze</span>
+        </div>
+        <div class="stats__item" data-reveal>
+          <span class="stats__num">$<span data-count="4">0</span>B+</span>
+          <span class="stats__label">Market cap at Braze IPO</span>
+        </div>
+        <div class="stats__item" data-reveal>
+          <span class="stats__num"><span data-count="100">0</span>+</span>
+          <span class="stats__label">Consultants enabled across EMEA</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Experience ===== -->
+    <section class="experience section section--light" id="experience">
+      <div class="section__head">
+        <span class="section__index">02</span>
+        <span class="section__label">Experience</span>
+      </div>
+      <h2 class="section__title" data-split-words>A decade of building, from embedded systems to the C-suite</h2>
+
+      <ol class="exp-list">
+        <li class="exp" data-exp>
+          <button class="exp__row" aria-expanded="false" data-cursor="view">
+            <span class="exp__period">2023 — Now</span>
+            <span class="exp__main">
+              <span class="exp__company">Jacquard</span>
+              <span class="exp__role">Chief Product &amp; Growth Officer</span>
+            </span>
+            <span class="exp__loc">New York</span>
+            <span class="exp__toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="exp__panel">
+            <div class="exp__panel-inner">
+              <p class="exp__summary">Recruited by private equity to lead product strategy and growth for a $10M+ ARR AI-native marketing technology platform leveraging generative AI and LLMs. Enterprise clients include Walgreens, Macy's and Currys.</p>
+              <ul class="exp__bullets">
+                <li>Own end-to-end GTM strategy for an AI-powered content optimisation platform, driving adoption across enterprise and growth segments</li>
+                <li>Build and execute strategic partnership programs with ecosystem partners to scale market reach</li>
+                <li>Co-authored a technical white paper on LLM applications in marketing — establishing thought leadership in the AI/ML space</li>
+                <li>Drive cross-functional coordination across Product, Engineering, Sales and Marketing</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li class="exp" data-exp>
+          <button class="exp__row" aria-expanded="false" data-cursor="view">
+            <span class="exp__period">2023 — Now</span>
+            <span class="exp__main">
+              <span class="exp__company">Oppizi</span>
+              <span class="exp__role">Advisor</span>
+            </span>
+            <span class="exp__loc">New York</span>
+            <span class="exp__toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="exp__panel">
+            <div class="exp__panel-inner">
+              <p class="exp__summary">Strategic guidance to a high-growth startup on product, go-to-market and scaling operations.</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="exp" data-exp>
+          <button class="exp__row" aria-expanded="false" data-cursor="view">
+            <span class="exp__period">2016 — 2023</span>
+            <span class="exp__main">
+              <span class="exp__company">Braze</span>
+              <span class="exp__role">Senior AVP ← Solutions Consultant</span>
+            </span>
+            <span class="exp__loc">NY &amp; London</span>
+            <span class="exp__toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="exp__panel">
+            <div class="exp__panel-inner">
+              <p class="exp__summary">Joined as an early Solutions Consultant and grew through six promotions to Senior AVP over 7 years 8 months — driving global expansion from startup to post-IPO ($4B+ market cap).</p>
+              <ul class="exp__bullets">
+                <li>Built and scaled the Global Commercial &amp; EMEA Solutions Consulting organisation from the ground up (0→1)</li>
+                <li>Developed cross-functional GTM programs driving enterprise and commercial segment adoption</li>
+                <li>Led technical pre-sales across Americas (East), Europe, Middle East and Africa</li>
+                <li>Pioneered enablement programs and technical content to accelerate partner and team onboarding</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li class="exp" data-exp>
+          <button class="exp__row" aria-expanded="false" data-cursor="view">
+            <span class="exp__period">2015 — 2016</span>
+            <span class="exp__main">
+              <span class="exp__company">Salesforce</span>
+              <span class="exp__role">Associate Solutions Consultant, Marketing Cloud</span>
+            </span>
+            <span class="exp__loc">London</span>
+            <span class="exp__toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="exp__panel">
+            <div class="exp__panel-inner">
+              <ul class="exp__bullets">
+                <li>Drove partner ecosystem engagement across EMEA Channel &amp; Alliances on commercial and enterprise accounts</li>
+                <li>Designed and delivered pre-sales enablement workshops across London, Paris, Milan and Madrid — personally enabling 100+ partner and Salesforce Solution Consultants in 10 months</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li class="exp" data-exp>
+          <button class="exp__row" aria-expanded="false" data-cursor="view">
+            <span class="exp__period">2014</span>
+            <span class="exp__main">
+              <span class="exp__company">McLaren Applied</span>
+              <span class="exp__role">Connected Vehicle &amp; Embedded Systems Engineer</span>
+            </span>
+            <span class="exp__loc">Woking, UK</span>
+            <span class="exp__toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="exp__panel">
+            <div class="exp__panel-inner">
+              <ul class="exp__bullets">
+                <li>Developed SNMP base-station diagnostics software from scratch; completed ahead of schedule while mentoring other interns</li>
+                <li>Built CBM environment images and trained team members on Unix, shell scripting and embedded systems</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li class="exp" data-exp>
+          <button class="exp__row" aria-expanded="false" data-cursor="view">
+            <span class="exp__period">2010 — 2011</span>
+            <span class="exp__main">
+              <span class="exp__company">IBM</span>
+              <span class="exp__role">Unix System Administrator, Hursley Labs</span>
+            </span>
+            <span class="exp__loc">UK</span>
+            <span class="exp__toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="exp__panel">
+            <div class="exp__panel-inner">
+              <ul class="exp__bullets">
+                <li>Built, managed and maintained hundreds of Unix, Linux and Windows systems; developed LPIC-1 level expertise</li>
+                <li>Selected for IBM Foundations' highly competitive Futures Scheme; co-developed the IBM New-Hires Community platform</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===== Capabilities ===== -->
+    <section class="caps section" id="capabilities">
+      <div class="section__head">
+        <span class="section__index">03</span>
+        <span class="section__label">Capabilities</span>
+      </div>
+      <h2 class="section__title" data-split-words>Technical credibility, commercial instinct</h2>
+
+      <div class="caps__grid">
+        <div class="caps__group" data-reveal>
+          <h3>GTM &amp; Partnerships</h3>
+          <ul class="caps__tags">
+            <li>Go-to-Market Strategy</li><li>Partner Ecosystems</li><li>Channel &amp; Alliances</li>
+            <li>0→1 Program Building</li><li>Cross-functional Leadership</li><li>Strategic Accounts</li>
+          </ul>
+        </div>
+        <div class="caps__group" data-reveal>
+          <h3>Technical</h3>
+          <ul class="caps__tags">
+            <li>AI / ML &amp; Generative AI</li><li>LLM Technology</li><li>Unix / Linux</li>
+            <li>SQL &amp; Data Analysis</li><li>Embedded Systems</li><li>Electronic Engineering</li>
+          </ul>
+        </div>
+        <div class="caps__group" data-reveal>
+          <h3>Industry</h3>
+          <ul class="caps__tags">
+            <li>MarTech</li><li>Enterprise SaaS</li><li>Startup-to-IPO Growth</li>
+            <li>Customer Engagement</li><li>Technical Pre-Sales</li><li>Developer Enablement</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="edu" data-reveal>
+        <div class="edu__item">
+          <span class="edu__label">Education</span>
+          <p><strong>MEng Electrical &amp; Electronic Engineering — First Class Honours</strong><br />
+          University College London &amp; London Centre for Nanotechnology, 2011–2015<br />
+          <span class="edu__sub">Exchange: City University of Hong Kong — Electronic &amp; Communications Engineering</span></p>
+        </div>
+        <div class="edu__item">
+          <span class="edu__label">Certifications</span>
+          <p>Harvard University — Leadership<br />Cornell University</p>
+        </div>
+        <div class="edu__item">
+          <span class="edu__label">Beyond work</span>
+          <p>Editor-in-Chief, Under City Lights Magazine (UCL) — led UCL's best-selling entertainment publication; first issue sold out within a week.<br />
+          <span class="edu__sub">English (native) · Cantonese (elementary)</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <footer class="contact section--light" id="contact">
+      <div class="section__head">
+        <span class="section__index">04</span>
+        <span class="section__label">Contact</span>
+      </div>
+      <p class="contact__pitch" data-reveal>Building something ambitious?<br />Let's talk about it.</p>
+      <a class="contact__mail" href="mailto:tjmcou@gmail.com" data-cursor="mail" data-fit>
+        <span class="contact__mail-line"><span class="contact__mail-inner">GET IN</span></span>
+        <span class="contact__mail-line"><span class="contact__mail-inner contact__mail-inner--accent">TOUCH ↗</span></span>
+      </a>
+      <div class="contact__row">
+        <div class="contact__links">
+          <a href="mailto:tjmcou@gmail.com" data-cursor="hover">tjmcou@gmail.com</a>
+          <a href="https://linkedin.com/in/toocou" target="_blank" rel="noopener" data-cursor="hover">linkedin.com/in/toocou</a>
+        </div>
+        <div class="contact__meta">
+          <span>New York, NY — <span id="nycTimeFooter">—</span></span>
+          <span>© 2026 Toby Coulthard</span>
+          <button class="contact__top" id="backToTop" data-cursor="hover">Back to top ↑</button>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="vendor/gsap.min.js"></script>
+  <script src="vendor/ScrollTrigger.min.js"></script>
+  <script src="vendor/lenis.min.js"></script>
+  <script src="js/main.js" defer></script>
+  <script type="module" src="js/hero-scene.js"></script>
+</body>
+</html>
