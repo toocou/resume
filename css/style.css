@@ -460,30 +460,6 @@ ul, ol { list-style: none; }
 .about__cta svg { transition: transform 0.35s var(--ease-out); }
 .about__cta:hover svg { transform: translateY(3px); }
 
-/* ---------- Stats ---------- */
-.stats {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  border-top: 1px solid var(--line);
-}
-.stats__item {
-  padding: clamp(1.5rem, 3vw, 2.5rem) clamp(1rem, 2vw, 2rem);
-  border-right: 1px solid var(--line);
-  display: flex; flex-direction: column; gap: 0.6rem;
-}
-.stats__item:last-child { border-right: 0; }
-.stats__num {
-  font-family: var(--font-display); font-weight: 800;
-  font-size: clamp(2.2rem, 5vw, 4.5rem);
-  line-height: 1; letter-spacing: -0.02em;
-  color: var(--accent);
-}
-.stats__label {
-  font-family: var(--font-label); font-size: 0.8rem;
-  text-transform: uppercase; letter-spacing: 0.08em;
-  color: var(--bone-dim);
-}
-
 /* ============================================================
    Experience
    ============================================================ */
@@ -603,6 +579,61 @@ ul, ol { list-style: none; }
 .edu__sub { color: var(--bone-dim); font-size: 0.875rem; }
 
 /* ============================================================
+   Podcast — The Array
+   ============================================================ */
+.podcast__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: center;
+}
+.podcast__eyebrow {
+  font-family: var(--font-label); font-size: 0.8rem;
+  text-transform: uppercase; letter-spacing: 0.18em;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+.podcast__title {
+  font-family: var(--font-display); font-weight: 800;
+  font-size: clamp(2.4rem, 6vw, 4.5rem);
+  line-height: 1; letter-spacing: -0.03em;
+  margin-bottom: 1.5rem;
+}
+.podcast__title .word { display: inline-block; }
+.podcast__lead {
+  color: var(--bone-dim);
+  font-size: clamp(1rem, 1.6vw, 1.15rem);
+  max-width: 42ch;
+  margin-bottom: 2rem;
+}
+.podcast__cta {
+  display: inline-flex; align-items: center; gap: 0.75rem;
+  font-family: var(--font-label); font-size: 0.9rem;
+  text-transform: uppercase; letter-spacing: 0.1em;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.9rem 1.6rem;
+  transition: background-color 0.35s var(--ease-out), color 0.35s var(--ease-out), border-color 0.35s;
+}
+.podcast__cta:hover { background: var(--accent); border-color: var(--accent); color: var(--ink); }
+.podcast__cta svg { transition: transform 0.35s var(--ease-out); }
+.podcast__cta:hover svg { transform: translate(2px, -2px); }
+.podcast__embed {
+  position: relative;
+  aspect-ratio: 624 / 351;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--ink-soft);
+  border: 1px solid var(--line);
+}
+.podcast__embed iframe {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  border: 0;
+}
+
+/* ============================================================
    Contact / footer
    ============================================================ */
 .contact { padding: clamp(4rem, 10vw, 8rem) var(--pad) clamp(2rem, 4vw, 3rem); }
@@ -663,10 +694,6 @@ ul, ol { list-style: none; }
 
   .about__grid { grid-template-columns: 1fr; }
   .about__portrait { max-width: 22rem; }
-  .stats { grid-template-columns: repeat(2, 1fr); }
-  .stats__item { border-bottom: 1px solid var(--line); }
-  .stats__item:nth-child(2n) { border-right: 0; }
-  .stats__item:nth-child(n+3) { border-bottom: 0; }
 
   .exp__row { grid-template-columns: 1fr 3rem; row-gap: 0.4rem; }
   .exp__period { order: 1; }
@@ -682,6 +709,7 @@ ul, ol { list-style: none; }
   .exp__row[aria-expanded="true"]::after { transform: rotate(45deg); color: var(--accent); opacity: 1; }
   .exp__panel-inner { margin-left: 0; }
 
+  .podcast__grid { grid-template-columns: 1fr; gap: 2.5rem; }
   .caps__grid { grid-template-columns: 1fr; gap: 2.5rem; }
   .edu { grid-template-columns: 1fr; gap: 2rem; }
 
@@ -689,7 +717,6 @@ ul, ol { list-style: none; }
 }
 
 @media (max-width: 480px) {
-  .stats { grid-template-columns: 1fr 1fr; }
   .hero__meta { flex-direction: column; align-items: flex-start; }
   .hero__location { text-align: left; }
   .contact__row { flex-direction: column; align-items: flex-start; }

@@ -297,20 +297,6 @@
   }
 
   /* ----------------------------------------------------------
-     Stat counters
-     ---------------------------------------------------------- */
-  gsap.utils.toArray('[data-count]').forEach((el) => {
-    const target = parseFloat(el.dataset.count);
-    if (prefersReducedMotion) { el.textContent = target; return; }
-    const obj = { value: 0 };
-    gsap.to(obj, {
-      value: target, duration: 1.6, ease: 'power2.out',
-      scrollTrigger: { trigger: el, start: 'top 90%' },
-      onUpdate: () => { el.textContent = Math.round(obj.value); },
-    });
-  });
-
-  /* ----------------------------------------------------------
      Experience accordion
      ---------------------------------------------------------- */
   document.querySelectorAll('.exp').forEach((item) => {
