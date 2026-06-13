@@ -293,6 +293,64 @@ ul, ol { list-style: none; }
 .marquee__track em { color: var(--accent); font-style: normal; }
 
 /* ============================================================
+   Featured-in press strip
+   ============================================================ */
+.featured {
+  padding: clamp(2.5rem, 6vw, 4.5rem) var(--pad);
+  border-bottom: 1px solid var(--line);
+}
+.featured__label {
+  font-family: var(--font-label); font-size: 0.75rem;
+  text-transform: uppercase; letter-spacing: 0.18em;
+  color: var(--bone-dim);
+  text-align: center;
+  margin-bottom: clamp(1.5rem, 3vw, 2.25rem);
+}
+.featured__logos {
+  display: flex; flex-wrap: wrap;
+  align-items: center; justify-content: center;
+  gap: clamp(1.75rem, 5vw, 4.5rem);
+}
+.press { line-height: 1; }
+.press__mark {
+  display: inline-block;
+  color: var(--bone);
+  opacity: 0.4;
+  filter: grayscale(100%);
+  transition: opacity 0.4s var(--ease-out), color 0.4s var(--ease-out), transform 0.4s var(--ease-out);
+  white-space: nowrap;
+  font-size: clamp(1.4rem, 3vw, 2.1rem);
+  line-height: 1;
+}
+.press__mark:hover { opacity: 1; transform: translateY(-2px); }
+
+/* Brand-evocative wordmarks (recreated typographically) */
+.press__mark--forbes {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 700; letter-spacing: -0.01em;
+  font-size: clamp(1.5rem, 3.1vw, 2.25rem);
+}
+.press__mark--sifted {
+  font-family: var(--font-display); font-weight: 800; letter-spacing: -0.03em;
+}
+.press__mark--sifted i { font-style: normal; color: var(--accent); margin-left: 0.04em; }
+.press__mark--sifted:hover { color: var(--accent); }
+.press__mark--campaign {
+  font-family: var(--font-label); font-weight: 700;
+  letter-spacing: -0.04em; text-transform: lowercase;
+}
+.press__mark--drum {
+  font-family: var(--font-display); font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.press__mark--techradar {
+  font-family: var(--font-label); font-weight: 400;
+  letter-spacing: -0.02em; text-transform: lowercase;
+}
+.press__mark--techradar b { font-weight: 700; }
+.press__mark--techradar:hover b { color: var(--accent); }
+
+/* ============================================================
    Sections (shared)
    ============================================================ */
 .section { padding: clamp(4rem, 10vw, 8rem) var(--pad); }
