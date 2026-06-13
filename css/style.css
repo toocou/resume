@@ -316,8 +316,8 @@ ul, ol { list-style: none; }
   display: block;
   height: clamp(1.4rem, 2.6vw, 1.9rem);
   width: auto;
-  /* White-on-transparent brand marks — dimmed by default, full on hover */
-  opacity: 0.5;
+  /* White-on-transparent brand marks — crisp white, subtle lift on hover */
+  opacity: 0.92;
   transition: opacity 0.4s var(--ease-out), transform 0.4s var(--ease-out);
 }
 .press__logo:hover { opacity: 1; transform: translateY(-2px); }
@@ -594,17 +594,17 @@ ul, ol { list-style: none; }
 .podcast__cta:hover svg { transform: translate(2px, -2px); }
 .podcast__embed {
   position: relative;
-  aspect-ratio: 624 / 351;
   width: 100%;
+  height: 352px;
   border-radius: 12px;
   overflow: hidden;
   background: var(--ink-soft);
-  border: 1px solid var(--line);
 }
 .podcast__embed iframe {
-  position: absolute; inset: 0;
+  display: block;
   width: 100%; height: 100%;
   border: 0;
+  border-radius: 12px;
 }
 
 /* ============================================================
