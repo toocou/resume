@@ -17,16 +17,12 @@ python3 -m http.server 8000
 Then open `http://localhost:8000`. (Opening `index.html` directly via `file://`
 won't work because the three.js hero is loaded as an ES module.)
 
-## Adding your portrait
+## Portrait
 
-In `index.html`, find the `about__portrait-frame` block and replace the
-placeholder `<div class="about__portrait-placeholder">…</div>` with:
-
-```html
-<img src="assets/portrait.jpg" alt="Portrait of Toby Coulthard" />
-```
-
-A 4:5 portrait of at least 800×1000px works best.
+The About section uses `assets/portrait.{webp,jpg}` (a 4:5 crop, served via a
+`<picture>` element with WebP and JPEG fallback). It's rendered grayscale and
+warms to full tone on hover. To swap it, replace those two files with a 4:5
+portrait of at least 800×1000px.
 
 ## Stack
 

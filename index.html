@@ -107,11 +107,10 @@
       <div class="about__grid">
         <div class="about__portrait" data-parallax>
           <div class="about__portrait-frame">
-            <!-- Replace this placeholder block with: <img src="assets/portrait.jpg" alt="Portrait of Toby Coulthard" /> -->
-            <div class="about__portrait-placeholder" role="img" aria-label="Portrait placeholder">
-              <span class="about__monogram">TC</span>
-              <span class="about__portrait-note">Portrait<br/>forthcoming</span>
-            </div>
+            <picture>
+              <source srcset="assets/portrait.webp" type="image/webp" />
+              <img src="assets/portrait.jpg" alt="Portrait of Toby Coulthard" width="724" height="905" loading="lazy" decoding="async" />
+            </picture>
           </div>
           <p class="about__caption">Toby Coulthard — New York, NY</p>
         </div>
